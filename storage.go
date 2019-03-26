@@ -51,11 +51,11 @@ const (
 )
 
 // Clone virtual harddrive
-func CloneHD(input, output string) error {
-	return vbm("clonehd", input, output)
-}
+// func CloneHD(input, output string) error {
+// 	return vbm("clonehd", input, output)
+// }
 
-func CloneMedium(input, output string)error {
+func CloneHD(input, output string)error {
 	return vbm("clonemedium disk", input, output, "--format VDI")
 }
 
