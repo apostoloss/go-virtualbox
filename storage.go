@@ -56,7 +56,7 @@ func CloneHD(input, output string) error {
 }
 
 func CloneMedium(input, output string)error {
-	retrun vbm("clonemedium disk", input, output, "--format VDI")
+	return vbm("clonemedium disk", input, output, "--format VDI")
 }
 
 //VBoxManage clonemedium disk /vms/image_build/centos7/output-virtualbox-iso/centos7-base-0.1.0-disk001.vmdk  /vms/${VM}/${VM}.vdi --format VDI
