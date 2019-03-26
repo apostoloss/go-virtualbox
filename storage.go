@@ -55,7 +55,7 @@ const (
 // 	return vbm("clonehd", input, output)
 // }
 
-func CloneHD(input, output string)error {
+func CloneHD(input, output string) error {
 	return vbm("clonemedium disk", input, output, "--format VDI")
 }
 
